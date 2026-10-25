@@ -1,0 +1,58 @@
+name: Bug report
+description: Something in a Modularyn repository or release does not work as its documentation says.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Search the open and closed issues first.
+
+        Never report a security vulnerability here: follow the [security policy](https://github.com/Modularyn/.github/blob/main/SECURITY.md) instead. Leave out secrets, keys, tokens and anything you would not publish.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, with the exact message or error.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What you expected to happen instead, and where the documentation says so, if it does.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Each command or action in order, from a fresh checkout where you can.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Release or commit
+      description: The release you run, or the commit you built from.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Operating system
+      options:
+        - Linux
+        - macOS
+        - Windows
+    validations:
+      required: true
+  - type: input
+    id: sdk
+    attributes:
+      label: Output of `dotnet --version`
+    validations:
+      required: false
