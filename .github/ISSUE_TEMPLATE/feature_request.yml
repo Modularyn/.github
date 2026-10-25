@@ -1,0 +1,29 @@
+name: Feature request
+description: Ask for an outcome Modularyn does not give you today.
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the suggestion. Search the open and closed issues first, and check the [roadmap](https://github.com/Modularyn/modularyn/blob/main/ROADMAP.md). Requests are welcome; opening one does not commit Modularyn to building it.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: The outcome you want
+      description: What should be true, or possible, once this exists?
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Your use case
+      description: The situation you need it in, what you are building, and where Modularyn falls short today.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Other ways you tried or thought of.
+    validations:
+      required: false
